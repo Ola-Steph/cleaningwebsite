@@ -34,14 +34,14 @@ const AboutSection = () => {
         ))}
       </motion.div>
 
-      {/* Right Side - Text Content */}
+      {/* Right Side - Center-Aligned Text Content */}
       <motion.div
         className="md:w-1/2 md:pl-10 mt-8 md:mt-0 text-center"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-[#00A9A5] text-center">
+        <h2 className="text-3xl font-bold mb-4 text-[#00A9A5]">
           About Us
         </h2>
         <p className="text-[#1A3D7C]">

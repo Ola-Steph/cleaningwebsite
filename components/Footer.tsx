@@ -2,34 +2,35 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer id="footer" className="border-t p-6 bg-gray-100 text-gray-700">
+    <footer id="footer" className="bg-[#F2F2F2] text-[#1A3D7C] p-6">
       {/* Top section with links and social icons */}
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mb-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mb-4 space-y-4 md:space-y-0">
+        
         {/* Social Links on the Left */}
-        <div className="flex space-x-4 mb-4 md:mb-0">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 transition">
+        <div className="flex space-x-4">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#1A3D7C] hover:text-[#00A9A5] transition-colors">
             <FaFacebook size={24} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-400 transition">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#1A3D7C] hover:text-[#00A9A5] transition-colors">
             <FaTwitter size={24} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-pink-500 transition">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#1A3D7C] hover:text-[#00A9A5] transition-colors">
             <FaInstagram size={24} />
           </a>
         </div>
 
-        {/* Section Links stacked vertically on the Right */}
-        <ul className="flex flex-col space-y-4 font-medium">
-          <li><a href="#hero" className="hover:text-blue-700 transition">Home</a></li>
-          <li><a href="#about" className="hover:text-blue-700 transition">About</a></li>
-          <li><a href="#services" className="hover:text-blue-700 transition">Services</a></li>
-          <li><a href="#testimonials" className="hover:text-blue-700 transition">Testimonials</a></li>
-          <li><a href="#footer" className="hover:text-blue-700 transition">Contact</a></li>
+        {/* Navigation Links on the Right */}
+        <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 font-medium text-center md:text-left">
+          <li><a href="#hero" className="hover:text-[#00A9A5] transition-colors">Home</a></li>
+          <li><a href="#about" className="hover:text-[#00A9A5] transition-colors">About</a></li>
+          <li><a href="#services" className="hover:text-[#00A9A5] transition-colors">Services</a></li>
+          <li><a href="#testimonials" className="hover:text-[#00A9A5] transition-colors">Testimonials</a></li>
+          <li><a href="#footer" className="hover:text-[#00A9A5] transition-colors">Contact</a></li>
         </ul>
       </div>
 
-      {/* Horizontal line */}
-      <hr className="border-gray-300 my-4" />
+      {/* Horizontal Divider */}
+      <hr className="border-[#FFD966] my-4" />
 
       {/* Copyright */}
       <div className="text-center text-sm">
