@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import WhatsAppButton from './WhatsAppButton'; // Importing WhatsAppButton component
 
 const HeroSection = () => {
+  const phone = '2349057331822';
+  const message = 'Hello, I would like to know more about your services.';
+
   return (
     <section
       id="hero"
@@ -21,6 +25,13 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+        
+        {/* WhatsApp Button added below the paragraph */}
+        <WhatsAppButton 
+          phone={phone} 
+          message={message} 
+          className="mt-4 inline-flex items-center" 
+        />
       </motion.div>
       
       {/* Centered Image Content */}
