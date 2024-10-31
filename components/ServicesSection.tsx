@@ -45,6 +45,7 @@ const ServicesSection = () => {
                 <div className="flip-card-back border border-[#00A9A5] p-4 rounded-lg shadow-lg bg-[#FFD966] text-[#1A3D7C] flex items-center justify-center">
                   <p className="text-sm font-semibold">
                     Quick overview of {title}.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq
                   </p>
                 </div>
               )}
