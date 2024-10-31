@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
-  { name: 'Customer 1', rating: 5, location: 'Location 1', feedback: 'Great service!' },
-  { name: 'Customer 2', rating: 4, location: 'Location 2', feedback: 'Very satisfied!' },
-  { name: 'Customer 3', rating: 5, location: 'Location 3', feedback: 'Exceptional quality!' },
+  { name: 'Esther', rating: 5, location: 'Garki, Abuja', feedback: 'Great service!' },
+  { name: 'Omolara', rating: 4, location: 'Wuse, Abuja', feedback: 'Very satisfied!' },
+  { name: 'JaiyeOla', rating: 5, location: 'Wuye, Abuja', feedback: 'Exceptional quality!' },
 ];
 
 const TestimonialsSection = () => {

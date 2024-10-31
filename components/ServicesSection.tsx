@@ -9,12 +9,6 @@ const ServicesSection = () => {
     "Glass Cleaning",
     "House Cleaning",
     "Car Cleaning",
-    "Wooden Floor Cleaning",
-    "Window Cleaning",
-    "Skyscraper Cleaning",
-    "Field Cleaning",
-    "Wall Cleaning",
-    "Bathroom Cleaning",
   ];
 
   const [loaded, setLoaded] = useState(false);
