@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import WhatsAppButton from "./WhatsAppButton"; // Importing WhatsAppButton component
 
 const AboutSection = () => {
+  const phone = '2349057331822';
+  const message = 'Hello, I would like to learn more about your services.';
+
   return (
     <section id="about" className="bg-[#F2F2F2] p-10 flex flex-col md:flex-row items-center">
       {/* Left Side - Cards with Stats */}
@@ -34,14 +38,14 @@ const AboutSection = () => {
         ))}
       </motion.div>
 
-      {/* Right Side - Text Content */}
+      {/* Right Side - Center-Aligned Text Content */}
       <motion.div
         className="md:w-1/2 md:pl-10 mt-8 md:mt-0 text-center"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-[#00A9A5] text-center">
+        <h2 className="text-3xl font-bold mb-4 text-[#00A9A5]">
           About Us
         </h2>
         <p className="text-[#1A3D7C]">
@@ -52,9 +56,17 @@ const AboutSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+
+        {/* WhatsApp Button */}
+        <WhatsAppButton 
+          phone={phone} 
+          message={message} 
+          className="mt-6 inline-flex items-center" 
+        />
       </motion.div>
     </section>
   );
 };
 
 export default AboutSection;
+
