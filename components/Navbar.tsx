@@ -1,9 +1,12 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import WhatsAppButton from './WhatsAppButton'; // Importing WhatsAppButton component
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const phone = '2349057331822'; // Replace with your actual WhatsApp number
+  const message = 'Hello, I would like to book a service!';
 
   return (
     <motion.nav
@@ -39,25 +42,26 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links - Responsive */}
-        <ul
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:flex md:space-x-8 font-medium text-[#1A3D7C] space-y-4 md:space-y-0 mt-4 md:mt-0`}
-        >
-          {["Home", "About", "Services", "Testimonials", "Contact"].map((label, idx) => (
-            <li key={label}>
-              <Link
-                to={label.toLowerCase()}
-                smooth={true}
-                duration={500}
-                className="hover:text-[#00A9A5] transition duration-200 cursor-pointer block"
-                onClick={() => setIsOpen(false)} // Close menu on link click
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className={`flex items-center ${isOpen ? 'block' : 'hidden'} md:flex space-y-4 md:space-y-0 md:space-x-8 font-medium text-[#1A3D7C]`}>
+          <ul className="flex flex-col md:flex-row items-center md:space-x-8 space-y-4 md:space-y-0 mt-4 md:mt-0">
+            {["Home", "About", "Services", "Testimonials"].map((label) => (
+              <li key={label}>
+                <Link
+                  to={label.toLowerCase()}
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#00A9A5] transition duration-200 cursor-pointer block"
+                  onClick={() => setIsOpen(false)} // Close menu on link click
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Book Now Button */}
+          <WhatsAppButton phone={phone} message={message} className="ml-4" />
+        </div>
       </div>
     </motion.nav>
   );
